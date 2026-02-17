@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You - Digital Boost Library</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#0f172a;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  text-align:center;
+}
+
+.container{
+  background:#111827;
+  padding:30px;
+  border-radius:15px;
+  width:90%;
+  max-width:520px;
+  box-shadow:0 0 25px rgba(0,0,0,0.6);
+}
+  
+h1{
+  color:#22c55e;
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+p{
+  color:#cbd5e1;
+  font-size:15px;
+}
+
+.book-name{
+  color:#facc15;
+  font-weight:bold;
+  margin:15px 0;
+}
+
+#countdown{
+  margin-top:10px;
+  color:#facc15;
+  font-weight:bold;
+}
+
+.progress-bar{
+  width:100%;
+  height:10px;
+  background:#1f2937;
+  border-radius:10px;
+  margin-top:10px;
+  overflow:hidden;
+}
+
+.progress{
+  height:100%;
+  width:0%;
+  background:#22c55e;
+  transition:width 1s linear;
+}
+
+.download-btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 25px;
+  background:#22c55e;
+  color:#000;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.support{
+  margin-top:20px;
+  font-size:12px;
+  color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>🎉 Thank You For Your Purchase!</h1>
+  <p>Your payment was successful.</p>
+
+  <div class="book-name" id="bookName">Loading...</div>
+
+  <div id="countdown">Preparing your download...</div>
+
+  <div class="progress-bar">
+    <div class="progress" id="progress"></div>
+  </div>
+
+  <a class="download-btn" href="#" id="downloadLink" target="_blank">⬇ Download Now</a>
+
+  <div class="support">
+    Need help? Contact us:<br />
+    ajerroud.ajerroud.1988@gmail.com
+  </div>
+</div>
+
+<!-- صوت النجاح -->
+<audio id="successSound">
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_115b9bce0b.mp3?filename=success-1-6297.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+// قراءة اسم المنتج من الرابط
+function getParam(param){
+  var url = new URL(window.location.href);
+  return url.searchParams.get(param);
+}
+
+var item = getParam("item_name");
+
+// روابط الكتب
+const books = {
+"Trading Book":"https://drive.google.com/drive/folders/1g2iUJZfmpS7sEuoVgiinJDoTMKs5K8g-",
+"Prophetic Medicine":"https://drive.google.com/file/d/1AFKNnN42CmA9hp9CPd_26vJqp2y1ZVZL/view?usp=drivesdk",
+"Ramadan Book":"https://drive.google.com/file/d/13xCxawh-OUZPLs7gY83vzr_w96UzEUaj/view?usp=drivesdk",
+"Self Development":"https://drive.google.com/file/d/1ncsf-62wCL728v2ZF__SjdQ0Jpku1i5y/view?usp=drivesdk",
+"Canada Book":"https://drive.google.com/file/d/195UN0u3p34GE8fB_Za-aGN2X49DKGOCb/view?usp=drivesdk",
+"desombres":"https://drive.google.com/file/d/1QtS39KY4OT10lNOFT6RqFPbP8g8HUNqC/view?usp=drivesdk",
+"jeffrey-epstein":"https://drive.google.com/file/d/1iIC4d5YL9iUiZmZQOsYRm9BCJgZrC__3/view?usp=drivesdk",
+"Bundle":"https://drive.google.com/drive/folders/1g2iUJZfmpS7sEuoVgiinJDoTMKs5K8g-"
+};
+
+// عرض اسم المنتج
+document.getElementById("bookName").innerText = "Product: " + item;
+
+if(books[item]){
+  var link = books[item];
+  var seconds = 10;
+  var progress = 0;
+  var countdownEl = document.getElementById("countdown");
+  var progressEl = document.getElementById("progress");
+  document.getElementById("downloadLink").href = link;
+
+  // تشغيل صوت النجاح بعد تحميل الصفحة
+  var audio = document.getElementById("successSound");
+  audio.play().catch(()=>{ /* المتصفح منع التشغيل التلقائي */ });
+
+  var timer = setInterval(function(){
+    seconds--;
+    progress += 10;
+    countdownEl.innerText = "Download will start in " + seconds + " seconds...";
+    progressEl.style.width = progress + "%";
+
+    if(seconds <= 0){
+      clearInterval(timer);
+      countdownEl.innerText = "Your download is starting...";
+      window.location.href = link;
+    }
+
+  },1000);
+
+}else{
+  document.getElementById("downloadLink").innerText = "Contact support to receive your file";
+  document.getElementById("downloadLink").href = "mailto:ajerroud.ajerroud.1988@gmail.com";
+}
+</script>
+
+</body>
+</html>
