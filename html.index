@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Boost Library | Premium Digital Books</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Poppins',sans-serif;margin:0;background:#0f0f0f;color:white}
+header{background:linear-gradient(135deg,#111,#1a1a1a);color:white;text-align:center;padding:70px 20px}
+
+/* ===== العنوان مع إطار ذهبي و3D ===== */
+header h1{
+  margin:0;
+  font-size:56px;
+  color:#FFD700; /* اللون الذهبي للنص */
+  text-shadow:
+    1px 1px 0 #b8860b,
+    2px 2px 0 #b8860b,
+    3px 3px 0 #b8860b; /* تأثير 3D */
+  border: 8px solid #FFD700; /* إطار ذهبي حول العنوان */
+  display: inline-block; /* يغلف النص فقط */
+  padding: 10px 25px; /* مسافة بين النص والإطار */
+  border-radius:12px; /* حواف مستديرة */
+  box-shadow: 0 0 25px rgba(255,215,0,0.6); /* ظل لإبراز العنوان */
+}
+
+header p{opacity:.85;margin-top:10px}
+.trust{background:#1a1a1a;display:flex;justify-content:center;gap:30px;padding:15px;font-size:14px;flex-wrap:wrap;border-radius:10px;margin:20px;}
+.container{max-width:1300px;margin:auto;padding:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:35px}
+.book{background:#1a1a1a;border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.7);text-align:center;position:relative}
+.book img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.book h3{padding:15px 10px 5px;font-size:18px}
+.book p{padding:0 15px;font-size:14px;color:#ccc}
+.price{font-size:22px;font-weight:700;margin:10px 0}
+.countdown-box{background:#111;padding:8px;margin:10px 20px;border-radius:10px;font-size:14px;font-weight:600}
+.review{padding:10px 15px;color:#ccc;font-size:13px}
+.buy-btn input{padding:12px 25px;background:#10b981;color:white;border:none;border-radius:40px;font-weight:600;cursor:pointer}
+.discount-badge{position:absolute;top:15px;left:15px;background:#10b981;color:#fff;padding:5px 10px;border-radius:10px;font-size:13px;font-weight:600;z-index:2}
+footer{background:#111;color:white;text-align:center;padding:40px 20px;margin-top:60px;font-size:14px}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>digital-boost-library</h1>
+  <p>Premium Digital Books</p>
+</header>
+
+<!-- باقي محتوى الصفحة كما هو -->
+
+</style>
+
+  
+</header>
+
+<div class="trust">
+<div>🔒 Secure Checkout</div>
+<div>⚡ Instant Download</div>
+<div>🌍 Global Access</div>
+<div>💰 PayPal & Crypto Accepted</div>
+</div>
+
+<div class="container">
+
+<!-- Book 1 -->
+<div class="book">
+<div class="discount-badge">10% OFF</div>
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxRzqmTMgLxw9hz7i7NddgOXTfFZR2edvo5EusGZHc5vNYE9Id8_jrV4YeDijL3cq4dFlL0JJ9xymWhknBlH1WY6ayuUICOjfz8gtiwS5M0-5LD4GhS5rxoYdEV9yT5oUd56xS75L5dyyVMiEGhtRaM_y5jDCMDGkH0lAwdheAaccJfMgeR66-3uAHWCQ/s320/tadawol.jpg" alt="Trading Book">
+<h3>Trading - من صفر إلى الإحتراف</h3>
+<p>Master financial markets step by step.</p>
+<div class="price">$12</div>
+<div class="countdown-box" id="timer1">Offer ends in: 48h 0m 0s</div>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="ajerroud.ajerroud.1988@gmail.com">
+<input type="hidden" name="item_name" value="Trading Book">
+<input type="hidden" name="amount" value="12">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="return" value="https://digital-boost-library.blogspot.com/thankyou.html?item_name=Trading+Book">
+<input type="submit" value="Buy Now">
+</form>
+<div class="review">★★★★☆ “Very practical and easy to follow.”</div>
+</div>
+
+<!-- Book 2 -->
+<div class="book">
+<div class="discount-badge">5% OFF</div>
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMo6I63caQaQPqqyVZzMK_28zgorxGK2FCcgW23I62EJA85k1aWnMsCUuleYbb6C6MP7iSCXMCiCxqzX5KIn6pHahO0Fsa6ZyBjzis7yluHKAhMesVcvLcTm3usL_FpdnMiEl1Qsb6qMdANJDOVArl0DT7MldcMCoIVDCkIcRDgEcESeFdyyJmnJxzrRw/s320/tebnabawi.jpg" alt="Prophetic Medicine">
+<h3>Prophetic Medicine Guide</h3>
+<p>Timeless natural health knowledge.</p>
+<div class="price">$4.99</div>
+<div class="countdown-box" id="timer2">Offer ends in: 48h 0m 0s</div>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="ajerroud.ajerroud.1988@gmail.com">
+<input type="hidden" name="item_name" value="Prophetic Medicine">
+<input type="hidden" name="amount" value="4.99">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="return" value="https://digital-boost-library.blogspot.com/thankyou.html?item_name=Prophetic+Medicine">
+<input type="submit" value="Buy Now">
+</form>
+<div class="review">★★★★★ “Great value for money!”</div>
+</div>
+
+<!-- Book 3 -->
+<div class="book">
+<div class="discount-badge">15% OFF</div>
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXSJVdH049n27ZzCrXYL19qVxLXaJUfEPncucEPJYmWklnJMXdoipNsTYl5bD1a5G-gIQ5YfwxpSn8Po5XwCon1ahAqn9jqutumW4b1m3caTIfRfpFFAxJXhIQqoTWhn26Bv579OWT1hXhRvGf65NzT5slxcv3TawuJ8LvB8MvcSWbsVI_43TbAJH4TPw/s320/abcd.jpg" alt="Ramadan Treasures">
+<h3>Ramadan Treasures</h3>
+<p>Spiritual reflections and guidance.</p>
+<div class="price">$9.99</div>
+<div class="countdown-box" id="timer3">Offer ends in: 48h 0m 0s</div>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="ajerroud.ajerroud.1988@gmail.com">
+<input type="hidden" name="item_name" value="Ramadan Book">
+<input type="hidden" name="amount" value="9.99">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="return" value="https://digital-boost-library.blogspot.com/thankyou.html?item_name=Ramadan+Book">
+<input type="submit" value="Buy Now">
+</form>
+<div class="review">★★★★☆ “Helpful for beginners.”</div>
+</div>
+
+<!-- Book 4 -->
+<div class="book">
+<div class="discount-badge">10% OFF</div>
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgP7X-EaXILRLNIBGfXxI6EvDuVT8kTP_VWBmu31RWSm8ocwCJdz7Cm9D_7xmVEZ0FyfHwKGE8mTHqKaZLqm51-PsnsNzNb7MLur6ooPJbnmjvvXOK5FJOIW3HRGQflRI0u7jGED6TSWH1d-lC1-cP-9NseDTddYTHYnF8ny-XzHN19SX0Y4Z7NwLp2wLI/s320/images.jpg" alt="Self Development">
+<h3>Self Development</h3>
+<p>Master emotional control and clarity.</p>
+<div class="price">$5</div>
+<div class="countdown-box" id="timer4">Offer ends in: 48h 0m 0s</div>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="ajerroud.ajerroud.1988@gmail.com">
+<input type="hidden" name="item_name" value="Self Development">
+<input type="hidden" name="amount" value="5">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="return" value="https://digital-boost-library.blogspot.com/thankyou.html?item_name=Self+Development">
+<input type="submit" value="Buy Now">
+</form>
+<div class="review">★★★★☆ “Very motivating book.”</div>
+</div>
+
+<!-- Book 5 -->
+<div class="book">
+<div class="discount-badge">20% OFF</div>
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ1usbb6TUL720HOSN8DyO0J8jbFhB7JDR9PtWpcv0bftljtXvQbEutfemJK5WblO9_9HlR3PDnlIAq4y0WvaCsLKCm3pW428nvxLYYQAS-MEigzbCpSEETZ9L9sVZg3fg0kZ92H7aPbSLCyD5G4yYh51vEMOj8ZRXG4IyQHnkFaDJsOrtTwB8ghvW_aw/s1600/canada-1911.jpg" alt="Canada Book">
+<h3>Canada To-Day and To-Morrow</h3>
+<p>Arthur (1911) historical edition.</p>
+<div class="price">$7</div>
+<div class="countdown-box" id="timer5">Offer ends in: 48h 0m 0s</div>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="ajerroud.ajerroud.1988@gmail.com">
+<input type="hidden" name="item_name" value="Canada Book">
+<input type="hidden" name="amount" value="7">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="return" value="https://digital-boost-library.blogspot.com/thankyou.html?item_name=Canada+Book">
+<input type="submit" value="Buy Now">
+</form>
+<div class="review">★★★★★ “Historical and informative.”</div>
+</div>
+
+<!-- Book 6 -->
+<div class="book">
+<div class="discount-badge">15% OFF</div>
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPFyU5bH1TCT9Ijityx82dtNTMz1TH7bJvIQsBWmmIIg0hFJY5PGw5cxHgeV0iB7qKB0m71Yve3BmGmriEUJsUkQ92vAyGJhpB7ihEmTPqBux-QPdz8pcrKhqbq73_jm3GidCHK4y-yGSpGVxz1I0N2Xh3OuBxQTMK1TUoQuUE9kJ6Yw2ZQ-y-HepFu8I/s320/Desombres.jpg" alt="Desombres">
+<h3>Desombres</h3>
+<p>Master emotional control and clarity.</p>
+<div class="price">$6</div>
+<div class="countdown-box" id="timer6">Offer ends in: 48h 0m 0s</div>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="ajerroud.ajerroud.1988@gmail.com">
+<input type="hidden" name="item_name" value="desombres">
+<input type="hidden" name="amount" value="6">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="return" value="https://digital-boost-library.blogspot.com/thankyou.html?item_name=desombres">
+<input type="submit" value="Buy Now">
+</form>
+<div class="review">★★★★☆ “Excellent guidance.”</div>
+</div>
+
+<!-- Book 7 -->
+<div class="book">
+<div class="discount-badge">5% OFF</div>
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjojk4Dez4nddR_0xZDHozRGtGhMc9R7RiFbgfyqGV3S74WZyi14_oS_Fwjznztofv_5Qo21CLP7a_0M1h34zrOHb9LrpyoJ7a6HGw7YXlNadOvw_1vQGFblCnbq2Pqv8voZret3YkosWNMtgsxn519MpCP58nzURrfJgwrvN5M1H-nrfJVk6GoIxzju68/s320/xx.jpg" alt="Jeffrey Epstein">
+<h3>Jeffrey Epstein Book</h3>
+<p>Master emotional control and clarity.</p>
+<div class="price">$49</div>
+<div class="countdown-box" id="timer7">Offer ends in: 48h 0m 0s</div>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="ajerroud.ajerroud.1988@gmail.com">
+<input type="hidden" name="item_name" value="jeffrey-epstein">
+<input type="hidden" name="amount" value="49">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="return" value="https://digital-boost-library.blogspot.com/thankyou.html?item_name=jeffrey-epstein">
+<input type="submit" value="Buy Now">
+</form>
+<div class="review">★★★☆☆ “Premium content.”</div>
+</div>
+
+<!-- Book 8 -->
+<div class="book">
+<div class="discount-badge">🔥 Bundle</div>
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi80Hudw5J4gmMxtF1JmAThyh0M5cUJNubD-IqKdDI3FDjEEZ4lcwLKodUZJ2vDZIvjQOn13RjYD-A2y2Ff_dukYxtMookXabGNt8fGmt7f92DyjMGC0j8NY-gJXA09LkdBbDqR_H0FAjVjA-JDyJwKPZAMKqNVpAAKKr_SIv6eqcYpr6J7g9_eQiipfhg/s320/digital.jpg" alt="Special Bundle">
+<h3>Special 4 Books Bundle</h3>
+<p>Get 4 premium books at a discounted price.</p>
+<div class="price">$19</div>
+<div class="countdown-box" id="timer8">Offer ends in: 48h 0m 0s</div>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="ajerroud.ajerroud.1988@gmail.com">
+<input type="hidden" name="item_name" value="Bundle">
+<input type="hidden" name="amount" value="19">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="return" value="https://digital-boost-library.blogspot.com/thankyou.html?item_name=Bundle">
+<input type="submit" value="Buy Now">
+</form>
+<div class="review">★★★★★ “Best value bundle!”</div>
+</div>
+
+</div>
+  
+  
+  
+  <!-- ====== STYLE ====== -->
+<style>
+.crypto-box, .email-section, .testimonials{
+  background:#111827;
+  padding:20px;
+  margin:20px auto;
+  max-width:600px;
+  border-radius:12px;
+  text-align:center;
+  color:#fff;
+  font-family:Poppins, sans-serif;
+}
+
+.crypto-box h2,
+.email-section h2,
+.testimonials h2{
+  color:#22c55e;
+}
+
+.wallet{
+  background:#000;
+  padding:10px;
+  border-radius:8px;
+  margin:10px 0;
+  word-break:break-all;
+  font-size:14px;
+}
+
+.copy-btn{
+  margin-top:8px;
+  padding:8px 15px;
+  background:#22c55e;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.email-section input{
+  padding:10px;
+  width:80%;
+  margin-top:10px;
+  border-radius:6px;
+  border:none;
+}
+
+.email-section button{
+  padding:10px 20px;
+  margin-top:10px;
+  background:#22c55e;
+  border:none;
+  border-radius:6px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.review{
+  background:#1f2937;
+  padding:10px;
+  margin-top:10px;
+  border-radius:8px;
+}
+
+footer{
+  text-align:center;
+  color:#aaa;
+  font-size:12px;
+  margin:20px 0;
+}
+
+.popup{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#111827;
+  color:#fff;
+  padding:15px;
+  border-radius:10px;
+  display:none;
+  box-shadow:0 0 10px rgba(0,0,0,0.6);
+  z-index:999;
+}
+
+.popup button{
+  margin-top:10px;
+  padding:8px 15px;
+  background:#22c55e;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:bold;
+}
+</style>
+
+<!-- ====== CRYPTO PAYMENT ====== -->
+<div class="crypto-box">
+<h2>Support us with USDT (BEP20)</h2>
+<p>Send exact amount in USDT (BEP20 network only) to:</p>
+
+<div class="wallet" id="walletAddress">
+0x909f287c74d83e6af2e15ca507065bd972675c2f
+</div>
+
+<button class="copy-btn" onclick="copyWallet()">Copy Address</button>
+
+<p>After payment send proof + book name to:<br>
+<b>ajerroud.ajerroud.1988@gmail.com</b></p>
+
+<p>Offer expires in: <span id="timer"></span></p>
+</div>
+
+<!-- ====== EMAIL CAPTURE ====== -->
+<div class="email-section">
+<h2>Get 10% OFF</h2>
+<p>Join our email list and receive discount code instantly.</p>
+<input type="email" placeholder="Enter your email" id="emailInput">
+<br>
+<button onclick="getDiscount()">Get Discount</button>
+<p id="msg" style="color:#22c55e;margin-top:10px;"></p>
+</div>
+
+<!-- ====== TESTIMONIALS ====== -->
+<div class="testimonials">
+<h2>Customer Reviews</h2>
+<div class="review">★★★★★ “Very practical and easy to follow.”</div>
+<div class="review">★★★★★ “Great value for money!”</div>
+<div class="review">★★★★☆ “Helpful for beginners.”</div>
+</div>
+
+<footer>
+© 2026 Digital Boost Library — All Rights Reserved<br>
+Secure Payment via PayPal & Crypto<br>
+Support: ajerroud.ajerroud.1988@gmail.com
+</footer>
+
+<!-- ====== POPUP ====== -->
+<div class="popup" id="popup">
+🎁 Get 10% OFF your first purchase!
+<br>
+<button onclick="closePopup()">Claim</button>
+</div>
+
+<!-- ====== SCRIPT ====== -->
+<script>
+// ===== Copy Wallet =====
+function copyWallet(){
+  var text = document.getElementById("walletAddress").innerText;
+  navigator.clipboard.writeText(text);
+  alert("Wallet address copied!");
+}
+
+// ===== Email Fake Capture =====
+function getDiscount(){
+  var email = document.getElementById("emailInput").value;
+  if(email === ""){
+    alert("Please enter your email");
+  }else{
+    document.getElementById("msg").innerText = "Your discount code: SAVE10";
+  }
+}
+
+// ===== Countdown 48h =====
+var countDownDate = new Date().getTime() + (48*60*60*1000);
+
+var x = setInterval(function(){
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+
+  var hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
+  var minutes = Math.floor((distance % (1000*60*60))/(1000*60));
+  var seconds = Math.floor((distance % (1000*60))/1000);
+
+  document.getElementById("timer").innerHTML =
+  hours+"h "+minutes+"m "+seconds+"s";
+
+  if(distance < 0){
+    clearInterval(x);
+    document.getElementById("timer").innerHTML = "EXPIRED";
+  }
+},1000);
+
+// ===== Popup after 5 seconds =====
+setTimeout(function(){
+  document.getElementById("popup").style.display = "block";
+},5000);
+
+function closePopup(){
+  document.getElementById("popup").style.display = "none";
+}
+</script>
+
